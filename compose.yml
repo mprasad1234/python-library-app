@@ -39,7 +39,7 @@ services:
     networks:
       - mynetwork
   app:
-    image: mdprasad/pyapp:borrow_image
+    image: mdprasad/pyapp:app_image
     deploy:
       replicas: 1
     ports:
