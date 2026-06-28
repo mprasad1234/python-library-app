@@ -19,7 +19,7 @@ services:
     networks:
       - mynetwork
   book_service:
-    image: mdprasad/pyapp: book_image
+    image: mdprasad/pyapp:book_image
     deploy:
       replicas: 1
     ports:
@@ -29,7 +29,7 @@ services:
     networks:
       - mynetwork
   borrow_service:
-    image: mdprasad/pyapp: borrow_image
+    image: mdprasad/pyapp:borrow_image
     deploy:
       replicas: 1
     ports:
@@ -39,7 +39,7 @@ services:
     networks:
       - mynetwork
   app:
-    image: mdprasad/pyapp: borrow_image
+    image: mdprasad/pyapp:borrow_image
     deploy:
       replicas: 1
     ports:
